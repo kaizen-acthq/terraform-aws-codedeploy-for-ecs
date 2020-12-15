@@ -23,7 +23,8 @@ This module provides recommended settings:
 
 ```hcl
 module "codedeploy" {
-  source                     = "git::https://github.com/tmknom/terraform-aws-codedeploy-for-ecs.git?ref=tags/1.2.0"
+  source                     = "git::https://github.com/faros-ai/terraform-aws-codedeploy-for-ecs.git?ref=tags/1.3.1"
+
   name                       = "example"
   ecs_cluster_name           = "${var.ecs_cluster_name}"
   ecs_service_name           = "${var.ecs_service_name}"
@@ -37,7 +38,8 @@ module "codedeploy" {
 
 ```hcl
 module "codedeploy" {
-  source                     = "git::https://github.com/tmknom/terraform-aws-codedeploy-for-ecs.git?ref=tags/1.2.0"
+  source                     = "git::https://github.com/faros-ai/terraform-aws-codedeploy-for-ecs.git?ref=tags/1.3.1"
+
   name                       = "example"
   ecs_cluster_name           = "${var.ecs_cluster_name}"
   ecs_service_name           = "${var.ecs_service_name}"
