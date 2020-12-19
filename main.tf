@@ -92,11 +92,14 @@ resource "aws_codedeploy_deployment_group" "default" {
         name = var.green_lb_target_group_name
       }
 
+      # ===============================================================================
+      # Disabled for now, since it creates false Terraform apply runs
+      # ===============================================================================
       # An optional path used by a load balancer to route test traffic after an Amazon ECS deployment.
       # Validation can happen while test traffic is served during a deployment.
-      test_traffic_route {
-        listener_arns = var.test_traffic_route_listener_arns
-      }
+      # test_traffic_route {
+      #   listener_arns = var.test_traffic_route_listener_arns
+      # }
     }
   }
 }
